@@ -3,18 +3,26 @@ if exists("g:nerdTreeOpenExternallyLoaded")
 endif
 let g:nerdTreeOpenExternallyLoaded = 1
 
+" check nerdtree loaded
+if !exists("loaded_nerd_tree")
+  echoerr "Error: nerdTREE is not loaded!"
+  finish
+endif
+
 " query the current selection in nerdtree and launch it
 " in the default associated application
-function! OpenExternally()
+function! NerdTreeOpenExternally()
   try
-    let path = g:NERDTreeFileNode.GetSelected().path.str(
-      \ {"escape": 1}
-      \ )
+    let path = g:NERDTreeFileNode.GetSelected().path.str()
   catch
     echoerr "Cannot retrieve path from selection!"
     return
   endtry
 
+  " preparing path for the system command
+  let path = substitute(shellescape(path), '\\', '/', 'g')
+
+  " calling system command
   call system(g:nerdTreeOpenExternallyCommand . " ". path)
 endfunc
 
@@ -28,7 +36,7 @@ if !exists("g:nerdTreeOpenExternallyCommand")
     let g:nerdTreeOpenExternallyCommand = "open"
 
   elseif has("win32")
-    let g:nerdTreeOpenExternallyCommand = "start"
+    let g:nerdTreeOpenExternallyCommand = "cmd /C start"
   endif
 endif
 
@@ -37,10 +45,8 @@ if !exists("g:nerdTreeOpenExternallyMap")
   let g:nerdTreeOpenExternallyMap = "e"
 endif
 
-" using VimEnter event to register the hotkey. Therefore,
-" allowing to override it to a custom one
-autocmd VimEnter * execute
-  \ "autocmd FileType nerdtree nnoremap <buffer> "
-  \ . g:nerdTreeOpenExternallyMap .
-  \ " :call OpenExternally()<cr>"
+" registering key map
+execute "autocmd FileType nerdtree nnoremap <buffer> "
+  \ . g:nerdTreeOpenExternallyMap
+  \ .  " :call NerdTreeOpenExternally()<cr>"
 
