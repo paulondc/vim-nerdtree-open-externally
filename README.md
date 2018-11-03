@@ -34,6 +34,20 @@ Then run the following in Vim:
 :PlugInstall
 ```
 
+#### NeoBundle
+Add the configuration below after the [NERDTree](https://github.com/scrooloose/nerdtree) plugin in your vim configuration:
+
+```
+NeoBundle 'paulondc/vim-nerdtree-open-externally'
+```
+
+Then run the following in Vim:
+
+```vim
+:source %
+:NeoBundleInstall
+```
+
 ## Issues
 vim-nerdtree-open-externally development discussions and bug reports are collected on [Issues](https://github.com/paulondc/vim-nerdtree-open-externally/issues)
 
