@@ -3,9 +3,9 @@ if exists("g:nerdTreeOpenExternallyLoaded")
 endif
 let g:nerdTreeOpenExternallyLoaded = 1
 
-" check nerdtree loaded
+" checking if nerdtree is loaded
 if !exists("loaded_nerd_tree")
-  echoerr "Error: nerdTREE is not loaded!"
+  echoerr "Error nerdTREE is not loaded!"
   finish
 endif
 
@@ -13,20 +13,20 @@ endif
 " in the default associated application
 function! NerdTreeOpenExternally()
   try
-    let path = g:NERDTreeFileNode.GetSelected().path.str()
+    let selectedNodePath = g:NERDTreeFileNode.GetSelected().path.str()
   catch
     echoerr "Cannot retrieve path from selection!"
     return
   endtry
 
-  " preparing path for the system command
-  let path = substitute(shellescape(path), '\\', '/', 'g')
+  " in case of windows path replacing backslash to forward slash
+  let selectedNodePath = substitute(selectedNodePath, '\\', '/', 'g')
 
   " calling system command
-  call system(g:nerdTreeOpenExternallyCommand . " ". path)
+  call system(g:nerdTreeOpenExternallyCommand . ' "' . selectedNodePath . '"')
 endfunc
 
-" command used to launch the file in the default associated
+" command used to launch the file in the default
 " application for each platform
 if !exists("g:nerdTreeOpenExternallyCommand")
   if has("unix")
@@ -36,7 +36,7 @@ if !exists("g:nerdTreeOpenExternallyCommand")
     let g:nerdTreeOpenExternallyCommand = "open"
 
   elseif has("win32")
-    let g:nerdTreeOpenExternallyCommand = "cmd /C start"
+    let g:nerdTreeOpenExternallyCommand = 'cmd /C start ""'
   endif
 endif
 
