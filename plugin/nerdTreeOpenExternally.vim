@@ -5,7 +5,7 @@ let g:nerdTreeOpenExternallyLoaded = 1
 
 " checking if nerdtree is loaded
 if !exists("loaded_nerd_tree")
-  echoerr "Error nerdTREE is not loaded!"
+  echoerr "Error NERDTree is not loaded!"
   finish
 endif
 
