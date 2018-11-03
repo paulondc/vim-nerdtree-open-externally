@@ -37,7 +37,7 @@ Then run the following in Vim:
 #### NeoBundle
 Add the configuration below after the [NERDTree](https://github.com/scrooloose/nerdtree) plugin in your vim configuration:
 
-```
+```vim
 NeoBundle 'paulondc/vim-nerdtree-open-externally'
 ```
 
