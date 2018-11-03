@@ -51,5 +51,8 @@ Then run the following in Vim:
 ## Issues
 vim-nerdtree-open-externally development discussions and bug reports are collected on [Issues](https://github.com/paulondc/vim-nerdtree-open-externally/issues)
 
+## Acknowledgements
+vim-nerdtree-open-externally was initially based on [vim-nerdtree_plugin_open](https://github.com/woelke/vim-nerdtree_plugin_open)
+
 ## Licensing
 vim-nerdtree-open-externally is free software; you can redistribute it and/or modify it under the terms of the MIT License
