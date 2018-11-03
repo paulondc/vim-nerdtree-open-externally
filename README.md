@@ -3,7 +3,7 @@
 </p>
 
 ## Introduction
-This is fairly simple plugin for NERDTree that provides a way of launching the current item NERDTree with the default desktop application associated with it. This is done by pressing the key `e` on the item you want to open externally. Feel free to override the default key mapping to your preferable one via:
+This is fairly simple plugin for [NERDTree](https://github.com/scrooloose/nerdtree) that provides a way of launching the current item [NERDTree](https://github.com/scrooloose/nerdtree) with the default desktop application associated with it. This is done by pressing the key `e` on the item you want to open externally. Feel free to override the default key mapping to your preferable one via:
 
 ```vim
 let g:nerdTreeOpenExternallyMap = "e"
@@ -17,11 +17,11 @@ This plugin is compatible with linux, macos and windows.
 
 ## Installation
 
-Make sure you have NERDTree installed locally
+Make sure you have [NERDTree](https://github.com/scrooloose/nerdtree) installed locally
 
 #### VimPlug
 
-Add the configuration below after the NERDTree plugin in your vim configuration:
+Add the configuration below after the [NERDTree](https://github.com/scrooloose/nerdtree) plugin in your vim configuration:
 
 ```vim
 Plug 'paulondc/vim-nerdtree-open-externally'
