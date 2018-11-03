@@ -42,7 +42,7 @@ endif
 
 " default hotkey used to launch the external application
 if !exists("g:nerdTreeOpenExternallyMap")
-  let g:nerdTreeOpenExternallyMap = "E"
+  let g:nerdTreeOpenExternallyMap = "e"
 endif
 
 " registering key map
