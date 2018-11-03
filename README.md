@@ -17,7 +17,7 @@ This plugin is compatible with linux, macos and windows.
 
 ## Installation
 
-Make sure you have [NERDTree](https://github.com/scrooloose/nerdtree) installed locally
+Make sure you have [NERDTree](https://github.com/scrooloose/nerdtree) installed locally.
 
 #### VimPlug
 
