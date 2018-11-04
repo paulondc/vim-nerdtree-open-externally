@@ -21,7 +21,7 @@ Make sure you have [NERDTree](https://github.com/scrooloose/nerdtree) installed 
 
 #### [VimPlug](https://github.com/junegunn/vim-plug)
 
-Add the configuration below after the [NERDTree](https://github.com/scrooloose/nerdtree) plugin in your vim configuration (neovim: `~/.config/nvim/init.vim`, vim: `~/.vimrc`):
+Add the configuration below after [NERDTree](https://github.com/scrooloose/nerdtree) plugin in your vim configuration (neovim: `~/.config/nvim/init.vim`, vim: `~/.vimrc`):
 
 ```vim
 Plug 'paulondc/vim-nerdtree-open-externally'
@@ -35,7 +35,7 @@ Then run the following in Vim:
 ```
 
 #### [NeoBundle](https://github.com/Shougo/neobundle.vim)
-Add the configuration below after the [NERDTree](https://github.com/scrooloose/nerdtree) plugin in your vim configuration (neovim: `~/.config/nvim/init.vim`, vim: `~/.vimrc`):
+Add the configuration below after [NERDTree](https://github.com/scrooloose/nerdtree) plugin in your vim configuration (neovim: `~/.config/nvim/init.vim`, vim: `~/.vimrc`):
 
 ```vim
 NeoBundle 'paulondc/vim-nerdtree-open-externally'
