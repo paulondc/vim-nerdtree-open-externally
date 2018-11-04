@@ -9,7 +9,7 @@ This is fairly simple plugin for [vim](https://neovim.io/) that provides a way o
 let g:nerdTreeOpenExternallyMap = "e"
 ```
 
-This plugin is compatible with linux, macos and windows.
+This plugin supports linux, macos and windows.
 
 <p align="center">
   <img src="data/clip.gif?v=1"/>
