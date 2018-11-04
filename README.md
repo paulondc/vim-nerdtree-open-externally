@@ -19,7 +19,7 @@ This plugin is compatible with linux, macos and windows.
 
 Make sure you have [NERDTree](https://github.com/scrooloose/nerdtree) installed locally.
 
-#### VimPlug
+#### [VimPlug](https://github.com/junegunn/vim-plug)
 
 Add the configuration below after the [NERDTree](https://github.com/scrooloose/nerdtree) plugin in your vim configuration:
 
@@ -34,7 +34,7 @@ Then run the following in Vim:
 :PlugInstall
 ```
 
-#### NeoBundle
+#### [NeoBundle](https://github.com/Shougo/neobundle.vim)
 Add the configuration below after the [NERDTree](https://github.com/scrooloose/nerdtree) plugin in your vim configuration:
 
 ```vim
