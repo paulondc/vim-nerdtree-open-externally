@@ -54,5 +54,5 @@ vim-nerdtree-open-externally development discussions and bug reports are collect
 ## Acknowledgements
 vim-nerdtree-open-externally was initially based on [vim-nerdtree_plugin_open](https://github.com/woelke/vim-nerdtree_plugin_open)
 
-## Licensing
+## License
 vim-nerdtree-open-externally is free software; you can redistribute it and/or modify it under the terms of the MIT License
